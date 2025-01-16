@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>Mechatronic Football | Computer and Electrical Overview</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="img/favicon.ico"> 
+	</head>
+	<body>
+		<div class="container">
+			<header>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="Simplex : Free HTML Template by Dzyngiri" /></a>
+                <ul>
+                	<li><a href="index.html">Home</a></li>
+                    <li><a href="mechanical.html">Mechanical</a></li>
+                    <li><a href="computerandelectrical.html" class="active">Computer and Electrical</a></li>
+                    <li><a href="competition.html">Competition</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="who-we-are.html">The Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </header>
+            <div class="main">
+                    <div class="inner2">
+                        <h1><br/>Computer and Electrical Overview</h1>
+                        <p>The computer and electrical engineers on the team were tasked with designing a safe and stable electrical system and an easy to user interface to control the robots. They have revamped the old schematics and implemented an entirely new embedded system for the project.</p>                        
+                    </div>
+                    
+                    <div class="inner2">
+                        <h2><br/>Arduino Solution</h2>
+                        <img class="inline-img-1" src="img/arduino.png" alt="Arduino Uno microcontroller" />
+                        <p>
+                            The computer engineering major has implemented an entirely new embedded system using the Arduino Uno microcontroller and the Playstation 3 Bluetooth controller as the core components.
+                            This new Arduino based system is able to interface with motors, servos, and anything else needed to provide necessary function to the players and is more cost effective, easier to code, quicker to implement, is more stable, and provides a much more user friendly interface to drive.
+                        </p>
+                        
+                        <p>The entire system contains four major components:</p>
+                            <ul>
+                                <li> <a href="http://arduino.cc/en/Main/arduinoBoardUno">Arduino Uno</a> costing approximately $25. </li>
+                                <li> <a href="https://www.circuitsathome.com/products-page/arduino-shields/usb-host-shield-2-0-for-arduino-assembled">Arduino USB Host Shield</a> costing $30. </li>
+                                <li> <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16833340012">Long-range Bluetooth USB Key</a> costing $15. </li>
+                                <li> <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16879261320">Playstation 3 Wireless Controller</a> costing approximately $45. </li>
+                            </ul>
+                            
+                           <p> 
+                                In total the system costs a little over $100 per robot for the major electrical components. In the past years the system was upwards of $250.
+                                The code is written and Unos programmed using the Arduino Development Environment which is free for use and available directly from the Arduino website.
+                                <br/><br/>
+                                Alongside the new system the "tackle sensor" provided to all teams were used again. The tackle sensor is mounted on the base of every robot and outputs a signal to the Arduino when the latteral g-force exceeds a programmed threshold.
+                                This system interfaces with multiple motors and servos to complete all the necessary functions a football team needs. It can throw a ball, kick a ball, catch a ball, and run it down the field to the end zone.
+                           </p>
+                           
+                        <h2><br/>Electrical Implementation</h2>
+                        <p>
+                            The electrical engineering majors have created a reliable and safe way to power all of the
+							electronics in every robot. This system safely handles all of the electronic components in the
+							Arduino solution as well as numerous motors and servos needed to keep the team functioning.
+							<br/><br/>
+                            <div class="col-1-special">
+                                <img src="img/Level0.jpg" alt="Level 0 Block Diagram" />
+                            </div>
+                            <div class="col-1-special">
+                                <img src="img/Level1.jpg" alt="Level 1 Block Diagram" />
+                            </div>
+                            <div class="col-1-special">
+                                <img src="img/Level2.jpg" alt="Level 2 Block Diagram" />
+                            </div>
+                            </br>
+							The biggest improvement in wiring from past years is connections. The wires that needed to
+							be joined at common points were only held together by wing nuts. These connectors slide over
+							wires that were crammed together. In stationary systems, these terminals are an acceptable
+							solution; however, for our dynamic football robots, one big hit and wires became disconnected.
+							The solution was installing screw-on terminal blocks. Not only can each wire be individually
+							tightened to make necessary connections, but the terminals themselves are also bolted to the base
+							of the players. There are at least three in most of the robots, for common ground, power, and the
+							Arduino I/O signals.
+							<br/><br/>
+							Players with specific functionality other than moving have more complex wiring arrangements;
+							the basic layout remains constant in all the robots. As shown in the schematic, the Arduino has
+							one input and two outputs for the lineman. The yellow wires at pins 5 and 6 send the signal to
+							the motor control to create motion. The red wire input comes from the tackle sensor, in order to
+							freeze all action for four seconds after a player is tackled. The kill switch enables power to the
+							motors only when enabled. In some robots, there is an extra level of safety included in a relay.
+							With the kill switch, the addition of a relay was determined to be redundant for this application.
+							By removing this component from most of the robots, safety was unaffected and the wiring
+							became even less complex.
+                        </p>
+                        
+                    </div>
+            </div>
+            
+            <div class="clr"></div>
+			<footer> 
+                <div class="mainFooter">
+                <div class="privHold">
+                     <pre> 2013 | Ohio Northern University | Shawn Pavel</pre>
+                 </div>
+                 </div>
+			</footer>
+            </div>
+	</div>
+		
+	</body>
+
+</html>
